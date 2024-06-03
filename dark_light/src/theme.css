@@ -1,0 +1,14 @@
+.app{
+    height: 100%;
+    background-color: black;
+}
+
+.lighttheme{
+    background-color: antiquewhite;
+    color: black;
+}
+
+.darktheme{
+    background-color: black;
+    color: white;
+}
