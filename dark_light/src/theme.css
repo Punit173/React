@@ -1,6 +1,8 @@
 .app{
     height: 100%;
+    padding: 50px;
     background-color: black;
+    border-radius: 100px;
 }
 
 .lighttheme{
