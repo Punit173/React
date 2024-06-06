@@ -3,9 +3,9 @@ import { useState, useEffect } from 'react';
 
 const Fetch = () => {
 
-    const [data, setData] = useState(null);
+    const [data, setData] = useState([]);
 
-    const data1 = [{id: 2, title: 'Mens Casual Premium Slim Fit T-Shirts ', price: 22.3, description: 'Slim-fitting style, contrast raglan long sleeve, t…e round neckline includes a three-button placket.', category: "men's clothing"}]
+    // const data1 = [{id: 2, title: 'Mens Casual Premium Slim Fit T-Shirts ', price: 22.3, description: 'Slim-fitting style, contrast raglan long sleeve, t…e round neckline includes a three-button placket.', category: "men's clothing"}]
 
 
     useEffect(() => {
@@ -34,9 +34,9 @@ const Fetch = () => {
                 data.map((ele)=>{
                     return (
                         <>
-                            <div style={{height:"300px",backgroundColor:"cyan",border:"5px solid black"}}>
+                            <div style={{height:"300px",backgroundColor:"cyan",border:"5px solid black",display:"flex",flexDirection:"column",alignItems:"center"}}>
                             <h2>{ele.id}</h2>
-                            <h6>{ele.title}</h6>
+                            <h6 style={{width:"100px"}}>{ele.title}</h6>
                             <img height={150} width={200}  src={ele.image} alt="" />
                             </div>
                         </>
