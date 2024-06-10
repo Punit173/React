@@ -7,6 +7,7 @@ import A from './ContextAPI/A'
 import { createContext } from 'react'
 
 const data = createContext();
+const data1 = createContext();
 function App() {
 
   const name = "Naman";
@@ -14,7 +15,9 @@ function App() {
   return (
     <>
       <data.Provider value={name}>
-        <A/>
+        <data1.Provider value={age}>
+          <A/>
+        </data1.Provider>
       </data.Provider>
       {/* <ClassA name="Naman" age={28} gender="Male"/> */}
     </>
@@ -22,4 +25,4 @@ function App() {
 }
 
 export default App
-export {data};
+export { data,data1 };
