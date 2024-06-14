@@ -1,6 +1,6 @@
 
 const initialData = {
-    tasks : ["Music","Dance"]
+    tasks : []
 }
 
 const Reducer = (state=initialData,action) => {

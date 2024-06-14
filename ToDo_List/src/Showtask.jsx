@@ -4,8 +4,10 @@ import Temp from './Temp';
 
 const Showtask = () => {
     const infor = useSelector((state)=>state);
+    let count=0;
     const tasklist = infor.tasks.map((e)=>{
-        return <Temp key={e.id} task={e}/>
+        count++;
+        return <Temp key={e.id} task={e} number={count}/>
     })
   return (
     <div>
