@@ -8,8 +8,8 @@ const Display = () => {
 
   return (
     <div>
-        <h1>Total users exist are : {info.username.length}</h1>
-        <h1>Total items exist are : {infor.itemname.length}</h1>
+        <h1>{info.username}</h1>
+        <h1>{infor.itemname}</h1>
     </div>
   )
 }
