@@ -16,8 +16,8 @@ function App() {
   }
 
   const multiply = useMemo(()=>{
-    console.log("*******")
-    return count*10
+    console.log("*******");
+    return count*10;
   },[count])
 
   return (
