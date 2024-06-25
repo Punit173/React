@@ -8,14 +8,22 @@ function App() {
 
   const reference = useRef();
 
-  function focuseve(){
-    reference.current.style.color = "red";  
+  function changeeve() {
+    reference.current.style.backgroundColor = "red";
+  }
+
+  function reseteve() {
+    reference.current.style.backgroundColor = "initial";
   }
 
   return (
     <>
-      <input ref={reference} type="text" />
-      <button onClick={focuseve}>Focus content</button>
+      {/* <input ref={reference} type="text" /> */}
+      <div ref={reference} style={{height:"50px",border:"5px solid black",backgroundColor:"orange"}}>
+
+      </div>
+      <button onClick={changeeve}>Change color</button>
+      <button onClick={reseteve}>Reset color</button>
     </>
   )
 }
