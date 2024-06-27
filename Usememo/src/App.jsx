@@ -6,23 +6,25 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
   const [minus, setMinus] = useState(500)
+  const [pitch, setPitch] = useState([]);
 
-  function plus (){
-    setCount(count+1);
+  function plus() {
+    setCount(count + 1);
   }
 
-  function sb () {
-    setMinus(minus-1);
+  function sb() {
+    setMinus(minus - 1);
   }
 
-  const multiply = useMemo(()=>{
+
+  const multiply = useMemo(() => {
     console.log("*******");
-    return count*10;
-  },[count])
+    return count * 10;
+  }, [count])
 
   return (
     <>
-    <span>{count}</span>
+      <span>{count}</span>
       <button onClick={plus}>Increment</button>
       <br />
       <span>{minus}</span>
