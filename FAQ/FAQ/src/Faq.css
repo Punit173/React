@@ -1,0 +1,66 @@
+body{
+    background-color: #000000;
+}
+
+.main h1{
+    color: white;
+    font-weight: 700;
+}
+
+.sections{
+    display: flex;
+    justify-content:space-between;
+    width: 80vw;
+    align-items: center;
+    padding: 7px 10px;
+    font-size: larger;
+    background-color: #000000;
+    border: 3px solid #423F3F;
+}
+
+.sections:hover{
+    background-color: #131212;
+}
+
+.sections p{
+    color: white;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.answers{
+    display: flex;
+    display: none;
+    padding: 7px 10px;
+    color: aliceblue;
+    background-color: #292727;
+    width: 80vw;
+    border: 2px solid #423F3F;
+    animation: disp 1s ease-in-out;
+}
+
+@keyframes disp {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+.sections button {
+    border-radius: 20px;
+    border: 1px solid transparent;
+    padding: 0.4em 0.5em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
