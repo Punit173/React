@@ -7,13 +7,12 @@ export const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title}>Hi, I'm Ada</h1>
+        <h1 className={styles.title}>Happy Birthday Divanshii</h1>
         <p className={styles.description}>
-          I'm a full-stack developer with 5 years of experience using React and
-          NodeJS. Reach out if you'd like to learn more!
+        May God bless you with everything you desire, keep you smiling always, and bring prosperity into your life.
         </p>
-        <a href="mailto:myemail@email.com" className={styles.contactBtn}>
-          Contact Me
+        <a href="https://www.figma.com/design/XDlRyFk1B0DIE1BVfPoDgB/Untitled?node-id=0-1&t=VkKU0TkpBl2NxIMl-0" target="__blank" className={styles.contactBtn}>
+          Surprise Me 🙌
         </a>
       </div>
       <img
