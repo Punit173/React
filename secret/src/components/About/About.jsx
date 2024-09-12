@@ -28,7 +28,7 @@ export const About = () => {
             <div className={styles.aboutItemText}>
               <h3>Over Thinker</h3>
               <p>
-                Every situation makes you overthink which makes you
+                Every hard situation makes you overthink but don't worry hum baithe haina, you just concentrate on coding I'll try solving all the errors and bugs by my own.
               </p>
             </div>
           </li>
